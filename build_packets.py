@@ -1,7 +1,7 @@
 from basic_sim_model import BasicSimulation, BGPId, PathAttributes
 import ipaddress
 from pydantic import BaseModel
-from bmp_specification import (
+from bmp import (
     BMPHeader,
     BMPInitiation,
     PerPeerHeader,
