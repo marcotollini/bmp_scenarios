@@ -4,7 +4,7 @@ from scapy.supersocket import StreamSocket
 import pickle
 from build_packets import BMPSimPackets
 import time
-from bmp_specification import BMPHeader
+from bmp import BMPHeader
 
 
 def send_packets(packets_pickle_name, ip="127.0.0.1", port=1790):
