@@ -11,7 +11,7 @@ for scenario in FOLDER.iterdir():
     sim = BasicSimulation.parse_file(scenario)
     packets = build_packets(sim)
     FILE = Path(f"packets/{scenario.stem}.pickle")
-    FILE.mkdir(parents=True, exist_ok=True)
+    # FILE.mkdir(parents=True, exist_ok=True)
     pickle.dump(packets, open(FILE, 'wb'))
     opackets = pickle.load(open(FILE, 'rb'))
     assert packets == opackets
