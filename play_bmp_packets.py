@@ -55,7 +55,7 @@ class Client:
             sleep(self.get_sleep())
             for p in packets.updates:
                 ss.send(p)
-            print('sent')
+            print('sent', self.thread_index)
 
 
 # def send_packets(packets_pickle_name, ip="127.0.0.1", port=1790):
